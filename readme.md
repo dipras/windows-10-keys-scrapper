@@ -1,8 +1,8 @@
 # WINDOWS 10 KEYS SCRAPPER
 
 Windows 10 license keys using chatgpt api
-- No dependency
 - use chatgpt official api
+- Free trial chat gpt
 
 ## How to use
 1. Clone the repository `git clone https://github.com/dipras/windows-10-keys-scrapper`
