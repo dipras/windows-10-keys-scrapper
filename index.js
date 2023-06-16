@@ -42,7 +42,7 @@ const exec = async () => {
     }
     index++;
   }
-  
+
   try {
     console.log("Please wait. Trying to fool chatgpt :D");
     const res = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -59,6 +59,14 @@ const exec = async () => {
     });
     
     const json = await res.json();
+
+    if(json.error) {
+      console.log({
+        message: "There is an error",
+        error: json.error
+      });
+      return;
+    }
     
     const messages = json.choices[0].message.content;
 
